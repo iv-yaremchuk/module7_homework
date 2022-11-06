@@ -16,7 +16,7 @@ class ElectricalDevice {
 // Создаём экземпляры 3-х приборов, передаём собственные свойста
 const tableLamp = new ElectricalDevice('Table Lamp', 24, 'on')
 const computer = new ElectricalDevice('Computer', 450, 'off')
-const toster = new ElectricalDevice('Toster', 120, 'on')
+const toaster = new ElectricalDevice('Toaster', 120, 'on')
 
 // Создаём функцию подсчёта суммы потребляемого электричества,
 // функция позволяет передовать параметры неопределённого колличества
@@ -29,4 +29,4 @@ function getSumPower(...devices) {
 }
 
 // Выводим сумму потребляемоего электричества всех включённых приборов
-console.log(getSumPower(tableLamp.power, computer.power, toster.power))
+console.log(getSumPower(tableLamp.power, computer.power, toaster.power))
