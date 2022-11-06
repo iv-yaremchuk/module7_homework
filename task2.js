@@ -4,14 +4,14 @@
 const strName = 'str';
 const obj = {
   key1: 12,
-  key2: 'fdfd',
+  key2: 2,
   key3: 17,
   key4: 'str'
 }
 
 // Создаём функцию поиска строки среди свойств объекта, в зависимости
 // от результата, в консоль выводится однократно true или false
-function getValue(name, object) {
+function getValueObj(name, object) {
   let result = false;
   for (let key in object) {
     if (object[key] === name) {
@@ -21,4 +21,4 @@ function getValue(name, object) {
   console.log(result)
 }
 
-getValue(strName, obj)
+getValueObj(strName, obj)
